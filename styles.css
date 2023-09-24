@@ -3,3 +3,109 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: antiquewhite;
+}
+
+.form-container {
+  /* Style the form container */
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+#all-players-container {
+  /* Style the players container */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.player-details-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.player-card {
+  /* Style individual player cards */
+  border: 2pt solid #000000;
+  border-radius: 1rem;
+  padding: 10px;
+  margin: 1rem 1%;
+  display: grid;
+  place-items: center;
+  width: calc(33.33% - 2rem);
+  max-width: 20rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .player-card {
+    width: calc(50% - 2rem);
+  }
+}
+
+.images {
+  /* Style player images */
+  max-width: 18rem;
+  height: auto;
+  border-radius: 1rem;
+  justify-content: center;
+}
+
+.see-detail-button {
+  /* Style buttons */
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
+}
+
+.remove-button {
+  /* Style buttons */
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #ff0000;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.see-detail-button:hover {
+  background-color: #0056b3;
+}
+
+.remove-button:hover {
+  background-color: #b30000;
+}
+
+#new-player-form{
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: right;
+}
+
+.button-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 2rem;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
