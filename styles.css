@@ -25,7 +25,7 @@ body {
   margin: 20px;
 }
 
-.player-details-container {
+#player-details-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
