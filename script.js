@@ -157,8 +157,8 @@ const renderAllPlayers =  (response) => {
             const removeButton = playerHTML.querySelector('.remove-button');
 
             seeDetailsButton.addEventListener('click', () => {
-                const playerId = seeDetailsButton.getAttribute('data-player-id'); // Get the player ID from data attribute
-                console.log('See Details button clicked for player ID:', playerId); // Add this line for debugging
+                const playerId = seeDetailsButton.getAttribute('data-player-id');
+                console.log('See Details button clicked for player ID:', playerId);
                 
                 fetchSinglePlayer(player.id);
             });
